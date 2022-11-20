@@ -1,0 +1,38 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title> Le Bateau de Thibault </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="fond_decran">
+  <ion-list class="list_button">
+    <ion-item class="item_ p" lines="none">
+      <button
+        fill="clear"
+        expand="block"
+        class="button_home"
+        (click)="onGoToProduitPromo()"
+      >
+        Produits et promotions
+      </button>
+    </ion-item>
+
+    <ion-item class="item_ p" lines="none">
+      <button class="button_home" (click)="onGoToBateaux()">Bateaux</button>
+    </ion-item>
+
+    <ion-item class="item_ p" lines="none">
+      <button class="button_home" (click)="onGoToRestaurants()">
+        Restaurants
+      </button>
+    </ion-item>
+
+    <ion-item class="item_ p" lines="none">
+      <button class="button_home" (click)="onGoToRecettes()">Recettes</button>
+    </ion-item>
+
+    <ion-item class="item_ p" lines="none">
+      <button class="button_home" (click)="onGoToContact()">Contact</button>
+    </ion-item>
+  </ion-list>
+</ion-content>
