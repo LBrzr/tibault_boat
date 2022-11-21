@@ -5,5 +5,15 @@
 </ion-header>
 
 <ion-content>
-
+  <ion-list>
+    <ion-label>
+      <button
+        ion-item
+        *ngFor="let boat of bateauList"
+        (click)="onLoadBateau(boat.bateauName)"
+      >
+        {{boat.bateauName}}
+      </button>
+    </ion-label>
+  </ion-list>
 </ion-content>

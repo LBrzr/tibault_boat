@@ -1,28 +1,28 @@
-import { Component } from '@angular/core';
-import { Router } from '@angular/router';
+import { Component } from "@angular/core";
+import { Router } from "@angular/router";
 
 @Component({
-  selector: 'app-home',
-  templateUrl: 'home.page.html',
-  styleUrls: ['home.page.scss'],
+  selector: "app-home",
+  templateUrl: "home.page.html",
+  styleUrls: ["home.page.scss"],
 })
 export class HomePage {
   constructor(private router: Router) {}
 
   onGoToProduitPromo() {
-    this.router.navigate(['/bateaux']);
+    this.router.navigate(["/produits"]);
   }
   onGoToBateaux() {
-    this.router.navigate(['/bateaux']);
+    this.router.navigate(["/bateaux"]);
   }
 
   onGoToRestaurants() {
-    this.router.navigate(['/bateaux']);
+    this.router.navigate(["/restaurants"]);
   }
   onGoToRecettes() {
-    this.router.navigate(['/bateaux']);
+    this.router.navigate(["/recettes"]);
   }
   onGoToContact() {
-    this.router.navigate(['/bateaux']);
+    this.router.navigate(["/contact"]);
   }
 }
