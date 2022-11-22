@@ -8,10 +8,10 @@
   <ion-item detail="true">
     <button
       ion-item
-      *ngFor="let boat of bateauList"
-      (click)="onLoadBateau(boat)"
+      *ngFor="let resto of onLoadRestaurant"
+      (click)="onLoadBateau(resto)"
     >
-      {{boat.name}}
+      {{resto.name}}
     </button>
   </ion-item>
 </ion-content>
