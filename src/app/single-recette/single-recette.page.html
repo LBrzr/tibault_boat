@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>{{recette.name}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-card [ngClass]="{'is-on': recette.isOn, 'is-off': !recette.isOn}">
+    <ion-card-header>{{recette.name}}</ion-card-header>
+        <ion-card-content>
+      <img [src]="recette.image"/>
+    </ion-card-content>
+    <ion-card-content>
+      <p color="primary" *ngFor="let description of recette.description">{{ description }}</p>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

@@ -12,6 +12,6 @@ export class RecettesService {
   constructor(private http: HttpClient) { }
 
   getRecettes(){
-    return this.http.get<Recette[]>('assets/data/recettes.json');
+    return this.http.get<Recette[]>('assets/data/recette.json');
   }
 }

@@ -1,7 +1,11 @@
 [
     {
         "name": "Recette pattes au beurre",
-        "description": "100g de pattes, de l'eau",
-        "image":""
+        "description": ["100g de pattes",
+        "du beurre", 
+        "de l'eau",
+        "une casserole"],
+        "image":"https://www.mysticpizza69.fr/produit/1157_303.png",
+        "isOn": true
     }
 ]
