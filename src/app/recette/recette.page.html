@@ -1,9 +1,19 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>recette</ion-title>
+    <ion-title>Recettes</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
-
+<ion-content padding>
+  <ion-list>
+    <ion-item>
+      <ion-label>
+          <button ion-item *ngFor="let recette of RecetteList" (click)="onLoadRecette(recette)">
+          <ion-icon name="power" [color]="recette.isOn ? 'secondary' : 'danger'"></ion-icon>
+          {{recette.name}}
+        </button>
+      </ion-label>
+    </ion-item>
+  </ion-list>
 </ion-content>
+
