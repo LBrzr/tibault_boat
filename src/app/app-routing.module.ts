@@ -15,6 +15,22 @@ const routes: Routes = [
     path: 'bateaux',
     loadChildren: () => import('./bateaux/bateaux.module').then( m => m.BateauxPageModule)
   },
+  {
+    path: 'produit',
+    loadChildren: () => import('./produit/produit.module').then( m => m.ProduitPageModule)
+  },
+  {
+    path: 'restaurant',
+    loadChildren: () => import('./restaurant/restaurant.module').then( m => m.RestaurantPageModule)
+  },
+  {
+    path: 'recette',
+    loadChildren: () => import('./recette/recette.module').then( m => m.RecettePageModule)
+  },
+  {
+    path: 'contact',
+    loadChildren: () => import('./contact/contact.module').then( m => m.ContactPageModule)
+  },
 ];
 
 @NgModule({
