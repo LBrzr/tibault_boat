@@ -3,9 +3,9 @@ import { Component, OnInit } from '@angular/core';
 import { Recette } from '../models/recette'
 import { RecettesService } from '../services/recettes.service';
 @Component({
-  selector: 'app-recette',
-  templateUrl: './recette.page.html',
-  styleUrls: ['./recette.page.scss'],
+  selector: "app-recette",
+  templateUrl: "./recette.page.html",
+  styleUrls: ["./recette.page.scss"],
 })
 export class RecettePage implements OnInit {
 

@@ -1,0 +1,11 @@
+<ion-header> </ion-header>
+
+<ion-content padding>
+  <ion-card>
+    <ion-card-header> {{boat.bateauName}} </ion-card-header>
+    <ion-card-content>
+      <p *ngFor=" let line of boat.bateauDescription">{{ line }}</p>
+      <ion-img [src]="boat.Photo"></ion-img>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

@@ -1,7 +1,11 @@
 import { HttpClient } from "@angular/common/http";
+import { Injectable } from "@angular/core";
 import { Observable } from "rxjs";
 import { Bateau } from "../models/bateau";
 
+@Injectable({
+    providedIn: 'root'
+})
 export class BateauService {
     bateauList!: Bateau[];
 
