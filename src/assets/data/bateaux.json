@@ -1,57 +1,57 @@
 [
-    {
-        "name": "Titanic",
-        "description": "Bateau super vieux qui a coulé comme une crotte dans des eaux glaciales, tuant au passage Leonardo Di Caprio. Merci, Vive les icebergs.",
-        "image": "./assets/images/bateaux/titanic.png"
-    },
-    {
-        "name": "L’Europa",
-        "description": "Appartenant actuellement à la Rederij Bark Europa, une société hollandaise de croisière au large, l’Europa est un trois-mâts barque de 56,50 mètres de longueur hors-tout. Véritable chef-d’œuvre flottant dédié initialement au cabotage, ce navire a été baptisé en 1911 à Hambourg sous le nom de « FS Senator Brockes ».",
-        "image": "./assets/images/bateaux/europa.png"
-    },
-    {
-        "name": "La Recouvrance",
-        "description": "Propriété de la ville de Brest, ce beau bateau ambassadeur est une réplique d’un aviso de 1817 de type « Iris » et dessiné par l’architecte naval Jean-Baptiste Hubert. Autrefois muni de six caronades de 24, son équipage était généralement composé de 50 à 60 marins. Actuellement armé au charter, il demeure l’un des fleurons des bateaux des côtes de France.",
-        "image": "./assets/images/bateaux/recouvrance.png"
-    },
-    {
-        "name": "Le Belem",
-        "description": "Classé monument historique en 1934, le Belem est le dernier des grands navires marchands français du XIXe siècle qui naviguent encore de nos jours. Mis à l’eau en 1896, il a été construit à Chantenay-sur-Loire par les chantiers Dubigeon.",
-        "image": "./assets/images/bateaux/belem.png"
-    },
-    {
-        "name": "L’Étoile du Roy",
-        "description": "Auparavant nommée « Grand Turk », l’Étoile du Roy est la réplique d’une frégate corsaire malouine datant du XVIIIe siècle. Faisant 46,30 mètres de longueur de coque hors-tout pour une largeur de 10,36 mètres, le bâtiment de guerre de 310 tonneaux était armé de 20 canons et transportait 240 hommes d’équipage.",
-        "image": "./assets/images/bateaux/etoile.png"
-    },
-    {
-        "name": "Le Georg Stage II",
-        "description": "Mis à l’eau en 1935, le Georg Stage II est un trois-mâts carré appartenant à la Georg Stage Memorial Foundation, une organisation indépendante dont la vocation est d’initier les jeunes à la pratique maritime sur un grand voilier. Construit en 1934 à Frederikshavn, au Danemark, afin de succéder au Georg Stage I, il est doté d’une coque en acier et mesure 41 mètres de longueur hors-tout.",
-        "image": "./assets/images/bateaux/georg.png"
-    },
-    {
-        "name": "Le Renard",
-        "description": "Navire de 70 tonneaux, Le Renard était un cotre à hunier mythique qui fut lancé en 1813. Armé par le malouin Robert Surcouf, il est notamment célèbre pour avoir coulé l’Alphéa, une corvette-goélette de la marine britannique qui disposait pourtant d’une puissance de feu largement supérieur.",
-        "image": "./assets/images/bateaux/renard.png"
-    },
-    {
-        "name": "Le Marité",
-        "description": "Portant le diminutif de sa marraine Marie-Thérèse Le Borgne, le Marité est un trois-mâts goélette qui a été lancé le 24 juin 1923 à Fécamp. Dernier terre-neuvier du patrimoine naval français, ce navire de 36,91 mètres de longueur hors-tout pour 8 mètres de largeur possède 650 m2 de voilure et un moteur auxiliaire de 460 chevaux.",
-        "image": "./assets/images/bateaux/renard.png"
-    },
-    {
-        "name": "Le Cuauhtemoc",
-        "description": "Baptisé du nom du dernier empereur aztèque, le Cuauhtemoc est un splendide voilier trois-mâts qui a été mis en service en décembre 1982 et dont le port d’attache est actuellement celui d’Acapulco.",
-        "image": "./assets/images/bateaux/cuauhtemoc.png"
-    },
-    {
-        "name": "Le Jeanie Johnston",
-        "description": "Mis à l’eau en 2000, le Jeanie Johnston est une réplique du cargo de commerce du même nom, construit au Québec en 1847, et qui avait servi à transporter les immigrants irlandais vers l’Amérique, entre 1848 et 1855.",
-        "image": "./assets/images/bateaux/johnston.png"
-    },
-    {
-        "name": "Le Khersones",
-        "description": "Issu des chantiers navals polonais de Gdansk, le Khersones est un grand voilier ukrainien conçu en 1989. À l’origine, il était destiné à l’instruction des cadets de la marine marchande soviétique ; mais suite à l’effondrement de l’URSS, il est finalement devenu un navire-école de l’Institut naval technologique de Kertch, en Ukraine.",
-        "image": "./assets/images/bateaux/khersones.png"
-    }
+  {
+    "name": "Titanic",
+    "description": "Bateau super vieux qui a coulé comme une crotte dans des eaux glaciales, tuant au passage Leonardo Di Caprio. Merci, Vive les icebergs.",
+    "image": "./assets/images/bateaux/aquilon@3x.png"
+  },
+  {
+    "name": "L’Europa",
+    "description": "Appartenant actuellement à la Rederij Bark Europa, une société hollandaise de croisière au large, l’Europa est un trois-mâts barque de 56,50 mètres de longueur hors-tout. Véritable chef-d’œuvre flottant dédié initialement au cabotage, ce navire a été baptisé en 1911 à Hambourg sous le nom de « FS Senator Brockes ».",
+    "image": "./assets/images/bateaux/deLaBrise@3x.png"
+  },
+  {
+    "name": "La Recouvrance",
+    "description": "Propriété de la ville de Brest, ce beau bateau ambassadeur est une réplique d’un aviso de 1817 de type « Iris » et dessiné par l’architecte naval Jean-Baptiste Hubert. Autrefois muni de six caronades de 24, son équipage était généralement composé de 50 à 60 marins. Actuellement armé au charter, il demeure l’un des fleurons des bateaux des côtes de France.",
+    "image": "./assets/images/bateaux/gastMicher@3x.png"
+  },
+  {
+    "name": "Le Belem",
+    "description": "Classé monument historique en 1934, le Belem est le dernier des grands navires marchands français du XIXe siècle qui naviguent encore de nos jours. Mis à l’eau en 1896, il a été construit à Chantenay-sur-Loire par les chantiers Dubigeon.",
+    "image": "./assets/images/bateaux/belem.png"
+  },
+  {
+    "name": "L’Étoile du Roy",
+    "description": "Auparavant nommée « Grand Turk », l’Étoile du Roy est la réplique d’une frégate corsaire malouine datant du XVIIIe siècle. Faisant 46,30 mètres de longueur de coque hors-tout pour une largeur de 10,36 mètres, le bâtiment de guerre de 310 tonneaux était armé de 20 canons et transportait 240 hommes d’équipage.",
+    "image": "./assets/images/bateaux/aquilon@3x.png"
+  },
+  {
+    "name": "Le Georg Stage II",
+    "description": "Mis à l’eau en 1935, le Georg Stage II est un trois-mâts carré appartenant à la Georg Stage Memorial Foundation, une organisation indépendante dont la vocation est d’initier les jeunes à la pratique maritime sur un grand voilier. Construit en 1934 à Frederikshavn, au Danemark, afin de succéder au Georg Stage I, il est doté d’une coque en acier et mesure 41 mètres de longueur hors-tout.",
+    "image": "./assets/images/bateaux/deLaBrise@3x.png"
+  },
+  {
+    "name": "Le Renard",
+    "description": "Navire de 70 tonneaux, Le Renard était un cotre à hunier mythique qui fut lancé en 1813. Armé par le malouin Robert Surcouf, il est notamment célèbre pour avoir coulé l’Alphéa, une corvette-goélette de la marine britannique qui disposait pourtant d’une puissance de feu largement supérieur.",
+    "image": "./assets/images/bateaux/deLaBrise@3x.png"
+  },
+  {
+    "name": "Le Marité",
+    "description": "Portant le diminutif de sa marraine Marie-Thérèse Le Borgne, le Marité est un trois-mâts goélette qui a été lancé le 24 juin 1923 à Fécamp. Dernier terre-neuvier du patrimoine naval français, ce navire de 36,91 mètres de longueur hors-tout pour 8 mètres de largeur possède 650 m2 de voilure et un moteur auxiliaire de 460 chevaux.",
+    "image": "./assets/images/bateaux/gastMicher@3x.png"
+  },
+  {
+    "name": "Le Cuauhtemoc",
+    "description": "Baptisé du nom du dernier empereur aztèque, le Cuauhtemoc est un splendide voilier trois-mâts qui a été mis en service en décembre 1982 et dont le port d’attache est actuellement celui d’Acapulco.",
+    "image": "./assets/images/bateaux/cuauhtesaphir@3xmoc.png"
+  },
+  {
+    "name": "Le Jeanie Johnston",
+    "description": "Mis à l’eau en 2000, le Jeanie Johnston est une réplique du cargo de commerce du même nom, construit au Québec en 1847, et qui avait servi à transporter les immigrants irlandais vers l’Amérique, entre 1848 et 1855.",
+    "image": "./assets/images/bateaux/aquilon@3x.png"
+  },
+  {
+    "name": "Le Khersones",
+    "description": "Issu des chantiers navals polonais de Gdansk, le Khersones est un grand voilier ukrainien conçu en 1989. À l’origine, il était destiné à l’instruction des cadets de la marine marchande soviétique ; mais suite à l’effondrement de l’URSS, il est finalement devenu un navire-école de l’Institut naval technologique de Kertch, en Ukraine.",
+    "image": "./assets/images/bateaux/saphir@3x.png"
+  }
 ]
