@@ -1,7 +1,7 @@
 import { Component, OnInit } from "@angular/core";
 import { Router, NavigationExtras } from "@angular/router";
 import { Bateau } from "../models/bateau";
-import { BateauService } from "../services/bateau";
+import { BateauService } from "../services/bateau.service";
 
 @Component({
   selector: "app-bateaux",
@@ -14,7 +14,7 @@ export class BateauxPage implements OnInit {
   constructor(private router: Router, private bateauService: BateauService) {}
 
   ngOnInit() {
-    this.bateauList = this.bateauService.bateauList.slice();
+    this.bateauList = this.bateauService.bateauList;
   }
 
   onLoadBateau(name: Bateau) {
