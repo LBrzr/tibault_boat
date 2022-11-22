@@ -1,7 +1,7 @@
 import { Component, OnInit } from "@angular/core";
 import { Router, NavigationExtras } from "@angular/router";
 import { Bateau } from "../models/bateau";
-import { BateauService } from "../services/bateau";
+import { BateauService } from "../services/bateau.service";
 
 @Component({
   selector: "app-bateaux",
