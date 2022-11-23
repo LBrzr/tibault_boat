@@ -1,9 +1,15 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>single-bateau</ion-title>
+    <ion-title>{{bateau.name}}</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
-
+<ion-content padding>
+  <ion-card-header>{{bateau.name}}</ion-card-header>
+  <ion-card-content>
+    <img [src]="bateau.image" />
+  </ion-card-content>
+  <ion-card-content>
+    <p>{{ bateau.description }}</p>
+  </ion-card-content>
 </ion-content>

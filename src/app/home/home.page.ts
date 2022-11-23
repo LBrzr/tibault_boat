@@ -15,7 +15,6 @@ export class HomePage {
   onGoToBateaux() {
     this.router.navigate(["/bateaux"]);
   }
-
   onGoToRestaurants() {
     this.router.navigate(["/restaurant"]);
   }
