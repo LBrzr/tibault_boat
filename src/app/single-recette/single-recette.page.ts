@@ -11,8 +11,10 @@ export class SingleRecettePage implements OnInit {
   recette!: {
     isOn: any;
     name: string;
-    description: string[];
     image: string;
+    Infos: string[];
+    Ingredients: string[];
+    Etapes: string[];
   };
   constructor(private route: ActivatedRoute, private router: Router) {
     this.route.queryParams.subscribe((params) => {

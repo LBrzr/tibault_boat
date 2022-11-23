@@ -11,8 +11,18 @@
       <img [src]="recette.image" />
     </ion-card-content>
     <ion-card-content>
-      <p color="primary" *ngFor="let description of recette.description">
-        {{ description }}
+      <p color="primary" *ngFor="let infos of recette.Infos">
+        {{ infos }}
+      </p>
+    </ion-card-content>
+    <ion-card-content>
+      <p color="primary" *ngFor="let ingredients of recette.Ingredients">
+        {{ ingredients }}
+      </p>
+    </ion-card-content>
+    <ion-card-content>
+      <p color="primary" *ngFor="let etapes of recette.Etapes">
+        {{ etapes }}
       </p>
     </ion-card-content>
   </ion-card>
