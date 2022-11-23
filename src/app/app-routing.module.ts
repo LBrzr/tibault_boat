@@ -38,6 +38,10 @@ const routes: Routes = [
     path: 'single-recette',
     loadChildren: () => import('./single-recette/single-recette.module').then( m => m.SingleRecettePageModule)
   },
+  {
+    path: 'single-bateau',
+    loadChildren: () => import('./single-bateau/single-bateau.module').then( m => m.SingleBateauPageModule)
+  },
 
 ];
 

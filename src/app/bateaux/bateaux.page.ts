@@ -23,6 +23,6 @@ export class BateauxPage implements OnInit {
         boat: name,
       },
     };
-    this.router.navigate(["/single-bateaux"], NavigationExtras);
+    this.router.navigate(["/single-bateau"], NavigationExtras);
   }
 }

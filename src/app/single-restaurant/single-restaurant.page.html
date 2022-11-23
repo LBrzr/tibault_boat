@@ -1,7 +1,15 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>single-restaurant</ion-title>
+    <ion-title>{{restaurant.name}}</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content> </ion-content>
+<ion-content padding>
+  <ion-card-header>{{restaurant.name}}</ion-card-header>
+  <ion-card-content>
+    <img [src]="restaurant.image" />
+  </ion-card-content>
+  <ion-card-content>
+    <p>{{ restaurant.description }}</p>
+  </ion-card-content>
+</ion-content>

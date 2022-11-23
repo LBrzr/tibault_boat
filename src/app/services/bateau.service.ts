@@ -1,32 +1,16 @@
-import { HttpClient } from "@angular/common/http";
 import { Injectable } from "@angular/core";
-import { Observable } from "rxjs";
+import { HttpClient } from "@angular/common/http";
 import { Bateau } from "../models/bateau";
 
 @Injectable({
-    providedIn: 'root'
+  providedIn: "root",
 })
 export class BateauService {
-    bateauList!: Bateau[];
+  bateauList!: Bateau[];
 
-    constructor(private http: HttpClient) {
-        this._loadBoats();
-    }
+  constructor(private http: HttpClient) {}
 
-    _loadBoats() : Observable<Object> {
-        let prom = this.http.get('./assets/data/bateaux.json');
-        prom.subscribe({
-            next: list => this.bateauList = list as Bateau[],
-            error: err => console.log(err),
-        });
-        return prom;
-    }
-
-    getBateaux() : Bateau[] {
-        return this.bateauList;
-    }
-
-    getBateauxAsync(): Observable<object> {
-        return this._loadBoats();
-    }
+  getRecettes() {
+    return this.http.get<Bateau[]>("assets/data/bateaux.json");
+  }
 }
