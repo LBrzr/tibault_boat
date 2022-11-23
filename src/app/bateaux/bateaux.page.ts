@@ -14,13 +14,21 @@ export class BateauxPage implements OnInit {
   constructor(private router: Router, private bateauService: BateauService) {}
 
   ngOnInit() {
-    this.bateauList = this.bateauService.bateauList;
+    this.bateauService.getRecettes().subscribe(
+      (res) => {
+        this.bateauList = res;
+        console.log(this.bateauList);
+      },
+      (err) => {
+        console.log("error");
+      }
+    );
   }
 
-  onLoadBateau(name: Bateau) {
+  onLoadBateau(bateau: { name: string; description: string; image: string }) {
     let NavigationExtras: NavigationExtras = {
       state: {
-        boat: name,
+        bateau: bateau,
       },
     };
     this.router.navigate(["/single-bateau"], NavigationExtras);

@@ -2,11 +2,11 @@
   {
     "name": "Mcdo ",
     "description": "Fast Food, t la plus grande chaîne de restauration rapide au monde, concurrente de Quick, Burger King ou KFC",
-    "image": "./assets/images/bateaux/aquilon@3x.png"
+    "image": "./assets/images/restaurants/macdo.png"
   },
   {
     "name": "BK",
     "description": "une grande chaîne de restauration rapide américaine qui compte plus de 13 000 lieux de vente dans 100 pays, dont les deux tiers aux États-Unis, et beaucoup au Canada",
-    "image": "./assets/images/bateaux/deLaBrise@3x.png"
+    "image": "./assets/images/restaurants/BK.png"
   }
 ]
