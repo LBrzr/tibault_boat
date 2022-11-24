@@ -42,6 +42,10 @@ const routes: Routes = [
     path: 'single-bateau',
     loadChildren: () => import('./single-bateau/single-bateau.module').then( m => m.SingleBateauPageModule)
   },
+  {
+    path: 'single-produit',
+    loadChildren: () => import('./single-produit/single-produit.module').then( m => m.SingleProduitPageModule)
+  },
 
 ];
 
