@@ -1,13 +1,14 @@
 import { Component, OnInit } from "@angular/core";
-import { ActivatedRoute, Router } from "@angular/router";
+import { ActivatedRoute } from "@angular/router";
+import { Router } from "@angular/router";
 
 @Component({
-  selector: "app-single-bateau",
-  templateUrl: "./single-bateau.page.html",
-  styleUrls: ["./single-bateau.page.scss"],
+  selector: "app-single-restaurant",
+  templateUrl: "./single-restaurant.page.html",
+  styleUrls: ["./single-restaurant.page.scss"],
 })
-export class SingleBateauPage implements OnInit {
-  bateau!: {
+export class SingleRestaurantPage implements OnInit {
+  restaurant!: {
     name: string;
     description: string[];
     image: string;
@@ -16,8 +17,8 @@ export class SingleBateauPage implements OnInit {
     this.route.queryParams.subscribe((params) => {
       if (this.router.getCurrentNavigation()?.extras.state) {
         let state = this.router.getCurrentNavigation()!.extras.state;
-        this.bateau = state!["bateau"];
-        console.log(this.bateau);
+        this.restaurant = state!["restaurant"];
+        console.log(this.restaurant);
       }
     });
   }

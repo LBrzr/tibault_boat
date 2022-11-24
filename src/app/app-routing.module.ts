@@ -1,57 +1,58 @@
-import { NgModule } from "@angular/core";
-import { PreloadAllModules, RouterModule, Routes } from "@angular/router";
+import { NgModule } from '@angular/core';
+import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   {
-    path: "home",
-    loadChildren: () =>
-      import("./home/home.module").then((m) => m.HomePageModule),
+    path: 'home',
+    loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
   },
   {
-    path: "",
-    redirectTo: "home",
-    pathMatch: "full",
+    path: '',
+    redirectTo: 'home',
+    pathMatch: 'full'
   },
   {
-    path: "bateaux",
-    loadChildren: () =>
-      import("./bateaux/bateaux.module").then((m) => m.BateauxPageModule),
+    path: 'bateaux',
+    loadChildren: () => import('./bateaux/bateaux.module').then( m => m.BateauxPageModule)
   },
   {
-    path: "contact",
-    loadChildren: () =>
-      import("./contact/contact.module").then((m) => m.ContactPageModule),
+    path: 'produit',
+    loadChildren: () => import('./produit/produit.module').then( m => m.ProduitPageModule)
   },
   {
-    path: "produits",
-    loadChildren: () =>
-      import("./produits/produits.module").then((m) => m.ProduitsPageModule),
+    path: 'restaurant',
+    loadChildren: () => import('./restaurant/restaurant.module').then( m => m.RestaurantPageModule)
   },
   {
-    path: "recettes",
-    loadChildren: () =>
-      import("./recettes/recettes.module").then((m) => m.RecettesPageModule),
+    path: 'recette',
+    loadChildren: () => import('./recette/recette.module').then( m => m.RecettePageModule)
   },
   {
-    path: "restaurants",
-    loadChildren: () =>
-      import("./restaurants/restaurants.module").then(
-        (m) => m.RestaurantsPageModule
-      ),
+    path: 'contact',
+    loadChildren: () => import('./contact/contact.module').then( m => m.ContactPageModule)
   },
   {
-    path: "single-bateau",
-    loadChildren: () =>
-      import("./single-bateau/single-bateau.module").then(
-        (m) => m.SingleBateauPageModule
-      ),
+    path: 'single-restaurant',
+    loadChildren: () => import('./single-restaurant/single-restaurant.module').then( m => m.SingleRestaurantPageModule)
+  },  {
+    path: 'single-recette',
+    loadChildren: () => import('./single-recette/single-recette.module').then( m => m.SingleRecettePageModule)
   },
+  {
+    path: 'single-bateau',
+    loadChildren: () => import('./single-bateau/single-bateau.module').then( m => m.SingleBateauPageModule)
+  },
+  {
+    path: 'single-produit',
+    loadChildren: () => import('./single-produit/single-produit.module').then( m => m.SingleProduitPageModule)
+  },
+
 ];
 
 @NgModule({
   imports: [
-    RouterModule.forRoot(routes, { preloadingStrategy: PreloadAllModules }),
+    RouterModule.forRoot(routes, { preloadingStrategy: PreloadAllModules })
   ],
-  exports: [RouterModule],
+  exports: [RouterModule]
 })
-export class AppRoutingModule {}
+export class AppRoutingModule { }

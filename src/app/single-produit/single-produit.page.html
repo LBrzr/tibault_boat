@@ -1,0 +1,41 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>{{ produit.name }} </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card [ngClass]="{'is-on': produit.availability, 'is-off': !produit.availability}">
+    <ion-card-header>{{produit.comments}}</ion-card-header>
+    <ion-card-content>
+      <p color="primary">
+        Unité: {{ produit.unit }}
+      </p>
+      <p color="primary">
+        Prix: {{ produit.price }}
+      </p>
+      <p color="primary">
+        Vendeur: {{ produit.owner }}
+      </p>
+      <p color="primary">
+        Remise: {{ produit.discount }}
+      </p>
+    </ion-card-content>
+    <ion-card-content>
+      <ion-col>
+        <ion-row>
+          <button (click)="less()">
+            <ion-icon name="remove-outline"></ion-icon>
+          </button>
+          <p padding> {{ quantite }} </p>
+          <button (click)="more()">
+            <ion-icon name="add-outline"></ion-icon>
+          </button>
+        </ion-row>
+        <button (click)="addToCart()">
+          Ajouter au panier
+        </button>
+      </ion-col>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

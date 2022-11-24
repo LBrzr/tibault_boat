@@ -10,17 +10,17 @@ export class HomePage {
   constructor(private router: Router) {}
 
   onGoToProduitPromo() {
-    this.router.navigate(["/produits"]);
+    this.router.navigate(["/produit"]);
   }
   onGoToBateaux() {
     this.router.navigate(["/bateaux"]);
   }
 
   onGoToRestaurants() {
-    this.router.navigate(["/restaurants"]);
+    this.router.navigate(["/restaurant"]);
   }
   onGoToRecettes() {
-    this.router.navigate(["/recettes"]);
+    this.router.navigate(["/recette"]);
   }
   onGoToContact() {
     this.router.navigate(["/contact"]);

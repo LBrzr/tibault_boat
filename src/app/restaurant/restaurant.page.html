@@ -1,6 +1,6 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>bateaux</ion-title>
+    <ion-title>restaurant</ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -8,10 +8,10 @@
   <ion-item detail="true">
     <button
       ion-item
-      *ngFor="let boat of bateauList"
-      (click)="onLoadBateau(boat)"
+      *ngFor="let resto of restaurantList"
+      (click)="onLoadResto(resto)"
     >
-      {{boat.name}}
+      {{resto.name}}
     </button>
   </ion-item>
 </ion-content>

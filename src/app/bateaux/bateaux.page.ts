@@ -1,51 +1,23 @@
 import { Component, OnInit } from "@angular/core";
-import { NavigationExtras, Router } from "@angular/router";
+import { Router, NavigationExtras } from "@angular/router";
+import { Bateau } from "../models/bateau";
+import { BateauService } from "../services/bateau.service";
+
 @Component({
   selector: "app-bateaux",
   templateUrl: "./bateaux.page.html",
   styleUrls: ["./bateaux.page.scss"],
 })
 export class BateauxPage implements OnInit {
-  bateauList = [
-    {
-      bateauName: "GrosseMoula",
-      bateauDescription: [
-        "Ceci est un mensonge",
-        "Cris du bateau : Mugiwaraaaaaa",
-      ],
-      bateauPhoto: "./assets/saphir.png",
-    },
-    {
-      bateauName: "Les cités de France",
-      bateauDescription: [
-        "Bateau qui viens tout droit du 93",
-        "Cris du bateau: Artenaaaaaaaa",
-      ],
-      bateauPhoto: "./assets/aquilon.png",
-    },
-    {
-      bateauName: "La terreur de la poiskaille",
-      bateauDescription: [
-        "Il cest battu contre une baleine et il a gagner",
-        "Cris du bateau: Suuuuuuuuuuuuuu",
-      ],
-      bateauPhoto: "./assets/deLaBrise.png",
-    },
-    {
-      bateauName: "El Predator",
-      bateauDescription: [
-        "Un des rares navire qui a rencontrer le MOBY DICK",
-        "Cris du bateau: AAAARRRRRRRRRRRGHHHHHHHHHHHHH",
-      ],
-      bateauPhoto: "./assets/gastMicher@2x.png",
-    },
-  ];
+  bateauList!: Bateau[];
 
-  constructor(private router: Router) {}
+  constructor(private router: Router, private bateauService: BateauService) {}
 
-  ngOnInit() {}
+  ngOnInit() {
+    this.bateauList = this.bateauService.bateauList;
+  }
 
-  onLoadBateau(name: string) {
+  onLoadBateau(name: Bateau) {
     let NavigationExtras: NavigationExtras = {
       state: {
         boat: name,
