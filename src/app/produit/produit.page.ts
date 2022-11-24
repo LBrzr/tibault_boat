@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Router, NavigationExtras } from '@angular/router';
+import { Router, NavigationExtras, ActivatedRoute } from '@angular/router';
+import { Categorie } from '../models/categorie';
 import { Produit } from '../models/produit';
 import { ProduitService } from '../services/produit.service';
 
@@ -10,13 +11,22 @@ import { ProduitService } from '../services/produit.service';
 })
 export class ProduitPage implements OnInit {
 
+  categorie!: Categorie;
   produitList!: Produit[];
 
-  constructor(private router: Router, private produitService: ProduitService) { }
+  constructor(private route: ActivatedRoute, private router: Router, private produitService: ProduitService) { 
+    this.route.queryParams.subscribe((params) => {
+      if (this.router.getCurrentNavigation()?.extras.state) {
+        let state = this.router.getCurrentNavigation()!.extras.state!;
+        this.categorie = state["categorie"];
+        console.log(this.categorie);
+      }
+    });
+  }
 
   ngOnInit() {
     this.produitService.getProduits().subscribe({
-      next: produits => this.produitList = produits,
+      next: produits => this.produitList = produits.filter((value: Produit, index: number, array: Produit[]) => value.category == this.categorie.id),
       error: console.error,
     })
   }

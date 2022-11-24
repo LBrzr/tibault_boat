@@ -10,7 +10,7 @@ export class HomePage {
   constructor(private router: Router) {}
 
   onGoToProduitPromo() {
-    this.router.navigate(["/produit"]);
+    this.router.navigate(["/produit-categorie"]);
   }
   onGoToBateaux() {
     this.router.navigate(["/bateaux"]);

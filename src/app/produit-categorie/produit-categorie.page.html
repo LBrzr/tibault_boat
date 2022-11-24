@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>produit-categorie</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list>
+    <ion-item>
+      <ion-label>
+          <button ion-item *ngFor="let categorie of categories" (click)="onCatClicked(categorie)">
+          {{categorie.name}}
+        </button>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>
