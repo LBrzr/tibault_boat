@@ -1,6 +1,5 @@
 import { Component, OnInit } from "@angular/core";
-import { ActivatedRoute } from "@angular/router";
-import { Router } from "@angular/router";
+import { ActivatedRoute, Router } from "@angular/router";
 
 @Component({
   selector: "app-single-restaurant",
@@ -10,7 +9,7 @@ import { Router } from "@angular/router";
 export class SingleRestaurantPage implements OnInit {
   restaurant!: {
     name: string;
-    description: string[];
+    description: string;
     image: string;
   };
   constructor(private route: ActivatedRoute, private router: Router) {
