@@ -24,4 +24,7 @@ export class HomePage {
   onGoToContact() {
     this.router.navigate(["/contact"]);
   }
+  onGoToPanier() {
+    this.router.navigate(["/panier"]);
+  }
 }

@@ -12,7 +12,7 @@ export class PanierService {
 
   _linePanierList: LinePanier[] = [];
 
-  getPanier(): LinePanier[] {
+  getContent(): LinePanier[] {
     return this._linePanierList;
   }
 
@@ -39,5 +39,9 @@ export class PanierService {
       this._linePanierList.splice(index, 1);
     }
     console.log(produit.name, " removed !");
+  }
+
+  payer() {
+
   }
 }
