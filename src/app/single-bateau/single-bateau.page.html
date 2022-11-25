@@ -1,11 +1,17 @@
 <app-bar [title]="bateau.name"></app-bar>
 
-<ion-content padding>
-  <ion-card-header>{{bateau.name}}</ion-card-header>
-  <ion-card-content>
-    <img [src]="bateau.image" />
-  </ion-card-content>
-  <ion-card-content>
-    <p>{{ bateau.description }}</p>
-  </ion-card-content>
+<ion-content class="parent">
+  <ion-grid>
+    <ion-row>
+      <h1>{{bateau.name}}<br /></h1>
+    </ion-row>
+
+    <ion-row>
+      <img [src]="bateau.image" />
+    </ion-row>
+
+    <ion-row class="description">
+      <p>{{ bateau.description }}</p>
+    </ion-row>
+  </ion-grid>
 </ion-content>

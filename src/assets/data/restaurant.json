@@ -1,11 +1,21 @@
 [
   {
-    "name": "Mcdo ",
+    "name": "Bistrot des Gascons ",
     "description": "Fast Food, t la plus grande chaîne de restauration rapide au monde, concurrente de Quick, Burger King ou KFC",
     "image": "./assets/images/restaurants/macdo.png"
   },
   {
-    "name": "BK",
+    "name": "Villa 9 Trois",
+    "description": "une grande chaîne de restauration rapide américaine qui compte plus de 13 000 lieux de vente dans 100 pays, dont les deux tiers aux États-Unis, et beaucoup au Canada",
+    "image": "./assets/images/restaurants/BK.png"
+  },
+  {
+    "name": "Les fous de l'île",
+    "description": "une grande chaîne de restauration rapide américaine qui compte plus de 13 000 lieux de vente dans 100 pays, dont les deux tiers aux États-Unis, et beaucoup au Canada",
+    "image": "./assets/images/restaurants/BK.png"
+  },
+  {
+    "name": "Bistrot du Sommelier",
     "description": "une grande chaîne de restauration rapide américaine qui compte plus de 13 000 lieux de vente dans 100 pays, dont les deux tiers aux États-Unis, et beaucoup au Canada",
     "image": "./assets/images/restaurants/BK.png"
   }

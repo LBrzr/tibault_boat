@@ -1,27 +1,117 @@
-#container {
-  text-align: center;
-
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
+* {
 }
 
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
+ion-content {
+  //background-position: ;
 }
 
-#container p {
-  font-size: 16px;
-  line-height: 22px;
+.parent {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(12.5px);
+  -webkit-backdrop-filter: blur(12.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  background-image: linear-gradient(to bottom right, white, #f5f6fa);
 
-  color: #8c8c8c;
+  .A {
+    text-align: center;
+    padding: 10%;
 
-  margin: 0;
-}
+    margin-top: 30px;
+    height: 30%;
 
-#container a {
-  text-decoration: none;
+    h1 {
+      font-family: "Montserrat", cursive;
+      font-weight: bold;
+      color: #8c9497;
+    }
+
+    p {
+      color: #fcc0ab;
+      font-size: large;
+      font-weight: bold;
+    }
+  }
+
+  .B {
+    align-items: center;
+
+    .card1 {
+      padding: 8%;
+      background: #f3ab9e;
+      // box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-radius: 10px;
+      // border: 1px solid rgba( 255, 255, 255, 0.18 );
+      text-align: center;
+      border-radius: 50px;
+    }
+
+    .card2 {
+      padding: 8px;
+      background: #f5c6b1;
+      // box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-radius: 10px;
+      // border: 1px solid rgba( 255, 255, 255, 0.18 );
+      text-align: center;
+      border-radius: 50px;
+    }
+
+    .card3 {
+      padding: 8%;
+      background: #f6d4ac;
+      // box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-radius: 10px;
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      text-align: center;
+      border-radius: 50px;
+    }
+
+    .card4 {
+      padding: 8%;
+      background: #f0deac;
+      // box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-radius: 10px;
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      text-align: center;
+      border-radius: 50px;
+    }
+
+    .card5 {
+      background: #f0deac;
+      // box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      text-align: center;
+      border-radius: 25px;
+      cursor: pointer;
+    }
+
+    ion-card-title {
+      color: white;
+    }
+  }
+
+  ion-card:after {
+    color: purple;
+  }
+
+  ion-icon {
+    font-size: 64px;
+    color: white;
+  }
 }

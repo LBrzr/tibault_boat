@@ -1,25 +1,22 @@
 <app-bar [title]="recette.name"></app-bar>
 
-<ion-content padding>
-  <ion-card [ngClass]="{'is-on': recette.isOn, 'is-off': !recette.isOn}">
-    <ion-card-header>{{recette.name}}</ion-card-header>
-    <ion-card-content>
+<ion-content class="parent">
+  <ion-grid>
+    <ion-row>
+      <h1>{{recette.name}}<br /></h1>
+    </ion-row>
+
+    <ion-row>
       <img [src]="recette.image" />
-    </ion-card-content>
-    <ion-card-content>
-      <p color="primary" *ngFor="let infos of recette.Infos">
-        {{ infos }}
-      </p>
-    </ion-card-content>
-    <ion-card-content>
+    </ion-row>
+
+    <ion-row class="description">
       <p color="primary" *ngFor="let ingredients of recette.Ingredients">
-        {{ ingredients }}
+        {{ ingredients }}<br />
       </p>
-    </ion-card-content>
-    <ion-card-content>
       <p color="primary" *ngFor="let etapes of recette.Etapes">
-        {{ etapes }}
+        {{ etapes }}<br />
       </p>
-    </ion-card-content>
-  </ion-card>
+    </ion-row>
+  </ion-grid>
 </ion-content>
