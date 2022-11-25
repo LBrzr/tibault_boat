@@ -1,8 +1,4 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title> Le Bateau de Thibault </ion-title>
-  </ion-toolbar>
-</ion-header>
+<app-bar [showBack]="false" ></app-bar>
 
 <ion-content class="fond_decran">
   <ion-list class="list_button">
@@ -11,8 +7,7 @@
         fill="clear"
         expand="block"
         class="button_home"
-        (click)="onGoToProduitPromo()"
-      >
+        (click)="onGoToProduitPromo()">
         Produits et promotions
       </button>
     </ion-item>
@@ -33,10 +28,6 @@
 
     <ion-item class="item_ p" lines="none">
       <button class="button_home" (click)="onGoToContact()">Contact</button>
-    </ion-item>
-    
-    <ion-item class="item_ p" lines="none">
-      <button class="button_home" (click)="onGoToPanier()">Panier</button>
     </ion-item>
   </ion-list>
 </ion-content>

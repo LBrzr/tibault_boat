@@ -1,14 +1,10 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>produit-categorie</ion-title>
-  </ion-toolbar>
-</ion-header>
+<app-bar title="Categories de produit"></app-bar>
 
 <ion-content padding>
   <ion-list>
-    <ion-item>
+    <ion-item *ngFor="let categorie of categories" >
       <ion-label>
-          <button ion-item *ngFor="let categorie of categories" (click)="onCatClicked(categorie)">
+          <button ion-item (click)="onCatClicked(categorie)">
           {{categorie.name}}
         </button>
       </ion-label>

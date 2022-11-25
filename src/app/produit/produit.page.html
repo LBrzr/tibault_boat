@@ -1,16 +1,10 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>{{categorie.name}}</ion-title>
-  </ion-toolbar>
-</ion-header>
-
+<app-bar [title]="categorie.name"></app-bar>
 
 <ion-content padding>
   <ion-list>
-    <ion-item>
+    <ion-item detail="true" *ngFor="let produit of produitList">
       <ion-label>
-          <button ion-item *ngFor="let produit of produitList" (click)="toSingleProduct(produit)">
-          <!-- <ion-icon name="power" [color]="produit. ? 'secondary' : 'danger'"></ion-icon> -->
+        <button ion-item (click)="toSingleProduct(produit)">
           {{produit.name}}
         </button>
       </ion-label>

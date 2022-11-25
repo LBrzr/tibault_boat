@@ -1,8 +1,4 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>{{recette.name}}</ion-title>
-  </ion-toolbar>
-</ion-header>
+<app-bar [title]="recette.name"></app-bar>
 
 <ion-content padding>
   <ion-card [ngClass]="{'is-on': recette.isOn, 'is-off': !recette.isOn}">

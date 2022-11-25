@@ -1,10 +1,8 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>{{ produit.name }} </ion-title>
-  </ion-toolbar>
+  <app-bar [title]="produit.name"></app-bar>
 </ion-header>
 
-<ion-content>
+<ion-content padding>
   <ion-card [ngClass]="{'is-on': produit.availability, 'is-off': !produit.availability}">
     <ion-card-header>{{produit.comments}}</ion-card-header>
     <ion-card-content>
