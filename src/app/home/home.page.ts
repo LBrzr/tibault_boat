@@ -15,6 +15,7 @@ export class HomePage {
   onGoToBateaux() {
     this.router.navigate(["/bateaux"]);
   }
+
   onGoToRestaurants() {
     this.router.navigate(["/restaurant"]);
   }
@@ -23,8 +24,5 @@ export class HomePage {
   }
   onGoToContact() {
     this.router.navigate(["/contact"]);
-  }
-  onGoToPanier() {
-    this.router.navigate(["/panier"]);
   }
 }

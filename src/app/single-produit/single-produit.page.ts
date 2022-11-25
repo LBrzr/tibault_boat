@@ -27,6 +27,10 @@ export class SingleProduitPage implements OnInit {
 
   }
 
+  goToCart() {
+    this.router.navigate(["/panier"]);
+  }
+
   addToCart() {
     this.panier.ajouter(this.produit, this.quantite);
   }

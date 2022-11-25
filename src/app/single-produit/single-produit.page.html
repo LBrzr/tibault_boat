@@ -1,20 +1,9 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-icon size="large" fill="outline" slot="end" name="cart"></ion-icon>
-    <img class="logo" src="../../assets/logo thibault.png" />
-  </ion-toolbar>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap"
-    rel="stylesheet"
-  />
+  <app-bar [title]="produit.name"></app-bar>
 </ion-header>
 
-<ion-content>
-  <ion-card
-    [ngClass]="{'is-on': produit.availability, 'is-off': !produit.availability}"
-  >
+<ion-content padding>
+  <ion-card [ngClass]="{'is-on': produit.availability, 'is-off': !produit.availability}">
     <ion-card-header>{{produit.comments}}</ion-card-header>
     <ion-card-content>
       <p color="primary">Unité: {{ produit.unit }}</p>

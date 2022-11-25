@@ -7,9 +7,11 @@ import { IonicModule } from '@ionic/angular';
 import { SingleBateauPageRoutingModule } from './single-bateau-routing.module';
 
 import { SingleBateauPage } from './single-bateau.page';
+import { SharedModule } from '../shared/shared.module';
 
 @NgModule({
   imports: [
+    SharedModule,
     CommonModule,
     FormsModule,
     IonicModule,

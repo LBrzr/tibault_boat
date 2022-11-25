@@ -1,0 +1,12 @@
+<ion-toolbar>
+  <ion-buttons slot="start" *ngIf="showBack">
+    <ion-back-button default-href="#"></ion-back-button>
+  </ion-buttons>
+  <ion-title *ngIf="hasTitle()">{{ title }}</ion-title>
+  <ion-title *ngIf="!hasTitle()">Le Bateau de Thibault</ion-title>
+  <ion-buttons *ngIf="showCart" slot="secondary">
+    <ion-button (click)="goToCart()">
+      <ion-icon slot="icon-only" name="cart"></ion-icon>
+    </ion-button>
+  </ion-buttons>
+</ion-toolbar>
