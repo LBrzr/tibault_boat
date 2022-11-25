@@ -1,0 +1,55 @@
+.parent {
+  display: flex;
+  flex-direction: column;
+
+  position: relative;
+}
+
+.logo {
+  width: 50%;
+  height: auto;
+  transform: translate(50%);
+}
+
+h1 {
+  font-family: "Kaushan Script", cursive;
+  font-size: 40px;
+}
+
+p {
+  padding: 5vw;
+  vertical-align: center;
+  font-family: "Montserrat", cursive;
+  font-size: large;
+  height: 50vw;
+}
+
+ion-button {
+  margin-top: 10px;
+  width: 100%;
+}
+
+ion-label {
+  font-size: 25px;
+}
+
+.quantity {
+  transform: translate(10%, 15%);
+}
+
+.quant {
+  text-align: center;
+  align-items: center;
+  vertical-align: center;
+}
+
+.atc-button {
+  font-size: large;
+}
+
+.divvvv {
+  position: relative;
+  text-align: center;
+  align-content: center;
+  vertical-align: center;
+}

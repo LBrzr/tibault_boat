@@ -1,29 +1,33 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>{{recette.name}}</ion-title>
+    <ion-icon size="large" fill="outline" slot="end" name="cart"></ion-icon>
+    <img class="logo" src="../../assets/logo thibault.png" />
   </ion-toolbar>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap"
+    rel="stylesheet"
+  />
 </ion-header>
 
-<ion-content padding>
-  <ion-card [ngClass]="{'is-on': recette.isOn, 'is-off': !recette.isOn}">
-    <ion-card-header>{{recette.name}}</ion-card-header>
-    <ion-card-content>
+<ion-content class="parent">
+  <ion-grid>
+    <ion-row>
+      <h1>{{recette.name}}<br /></h1>
+    </ion-row>
+
+    <ion-row>
       <img [src]="recette.image" />
-    </ion-card-content>
-    <ion-card-content>
-      <p color="primary" *ngFor="let infos of recette.Infos">
-        {{ infos }}
-      </p>
-    </ion-card-content>
-    <ion-card-content>
+    </ion-row>
+
+    <ion-row class="description">
       <p color="primary" *ngFor="let ingredients of recette.Ingredients">
-        {{ ingredients }}
+        {{ ingredients }}<br />
       </p>
-    </ion-card-content>
-    <ion-card-content>
       <p color="primary" *ngFor="let etapes of recette.Etapes">
-        {{ etapes }}
+        {{ etapes }}<br />
       </p>
-    </ion-card-content>
-  </ion-card>
+    </ion-row>
+  </ion-grid>
 </ion-content>

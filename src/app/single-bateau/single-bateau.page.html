@@ -1,15 +1,28 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>{{bateau.name}}</ion-title>
+    <ion-icon size="large" fill="outline" slot="end" name="cart"></ion-icon>
+    <img class="logo" src="../../assets/logo thibault.png" />
   </ion-toolbar>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap"
+    rel="stylesheet"
+  />
 </ion-header>
 
-<ion-content padding>
-  <ion-card-header>{{bateau.name}}</ion-card-header>
-  <ion-card-content>
-    <img [src]="bateau.image" />
-  </ion-card-content>
-  <ion-card-content>
-    <p>{{ bateau.description }}</p>
-  </ion-card-content>
+<ion-content class="parent">
+  <ion-grid>
+    <ion-row>
+      <h1>{{bateau.name}}<br /></h1>
+    </ion-row>
+
+    <ion-row>
+      <img [src]="bateau.image" />
+    </ion-row>
+
+    <ion-row class="description">
+      <p>{{ bateau.description }}</p>
+    </ion-row>
+  </ion-grid>
 </ion-content>
