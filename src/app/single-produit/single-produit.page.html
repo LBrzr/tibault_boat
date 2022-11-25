@@ -1,25 +1,26 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>{{ produit.name }} </ion-title>
+    <ion-icon size="large" fill="outline" slot="end" name="cart"></ion-icon>
+    <img class="logo" src="../../assets/logo thibault.png" />
   </ion-toolbar>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap"
+    rel="stylesheet"
+  />
 </ion-header>
 
 <ion-content>
-  <ion-card [ngClass]="{'is-on': produit.availability, 'is-off': !produit.availability}">
+  <ion-card
+    [ngClass]="{'is-on': produit.availability, 'is-off': !produit.availability}"
+  >
     <ion-card-header>{{produit.comments}}</ion-card-header>
     <ion-card-content>
-      <p color="primary">
-        Unité: {{ produit.unit }}
-      </p>
-      <p color="primary">
-        Prix: {{ produit.price }}
-      </p>
-      <p color="primary">
-        Vendeur: {{ produit.owner }}
-      </p>
-      <p color="primary">
-        Remise: {{ produit.discount }}
-      </p>
+      <p color="primary">Unité: {{ produit.unit }}</p>
+      <p color="primary">Prix: {{ produit.price }}</p>
+      <p color="primary">Vendeur: {{ produit.owner }}</p>
+      <p color="primary">Remise: {{ produit.discount }}</p>
     </ion-card-content>
     <ion-card-content>
       <ion-col>
@@ -27,14 +28,12 @@
           <button (click)="less()">
             <ion-icon name="remove-outline"></ion-icon>
           </button>
-          <p padding> {{ quantite }} </p>
+          <p padding>{{ quantite }}</p>
           <button (click)="more()">
             <ion-icon name="add-outline"></ion-icon>
           </button>
         </ion-row>
-        <button (click)="addToCart()">
-          Ajouter au panier
-        </button>
+        <button (click)="addToCart()">Ajouter au panier</button>
       </ion-col>
     </ion-card-content>
   </ion-card>
