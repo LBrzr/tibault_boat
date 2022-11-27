@@ -1,13 +1,23 @@
 <app-bar [title]="categorie.name"></app-bar>
 
 <ion-content padding>
-  <ion-list>
-    <ion-item detail="true" *ngFor="let produit of produitList">
-      <ion-label>
-        <button ion-item (click)="toSingleProduct(produit)">
-          {{produit.name}}
-        </button>
-      </ion-label>
-    </ion-item>
-  </ion-list>
+  <ion-accordion-group>
+    <ion-accordion *ngFor="let produit of produitList">
+      <ion-item slot="header" color="light">
+        <ion-label>{{produit.name}}</ion-label>
+        <ion-badge *ngIf="produit.sale" slot="end" color="danger">- {{produit.discount}} €</ion-badge>
+      </ion-item>
+      <div class="ion-padding" slot="content">
+        <ion-row style="align-items:center;">
+          <ion-label>Prix: {{ produit.price }} € / {{ produit.unit }}</ion-label>
+          <ion-col>
+            <ion-button size="small" fill="clear" (click)="toSingleProduct(produit)">Details</ion-button>
+          </ion-col>
+          <ion-col size="auto"> 
+            <app-number-control [produit]="produit" [short]="true"></app-number-control>
+          </ion-col>
+        </ion-row>
+      </div>
+    </ion-accordion>
+  </ion-accordion-group>
 </ion-content>

@@ -2,9 +2,9 @@
   <ion-buttons slot="start" *ngIf="showBack">
     <ion-back-button default-href="#"></ion-back-button>
   </ion-buttons>
-  <!-- <ion-title *ngIf="hasTitle()">{{ title }}</ion-title>
-  <ion-title *ngIf="!hasTitle()">Le Bateau de Thibault</ion-title> -->
-  <ion-toolbar>
+  <ion-title *ngIf="hasTitle()">{{ title }}</ion-title>
+  <ion-title *ngIf="!hasTitle()">Le Bateau de Thibault</ion-title>
+  <ion-toolbar *ngIf="false">
     <img class="logo" src="../../assets/logo thibault.png" />
   </ion-toolbar>
   <link rel="preconnect" href="https://fonts.googleapis.com" />

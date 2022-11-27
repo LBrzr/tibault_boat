@@ -11,9 +11,8 @@ import { PanierService } from '../services/panier.service';
 export class SingleProduitPage implements OnInit {
 
   produit!: Produit;
-  quantite: number = 1;
 
-  constructor(private route: ActivatedRoute, private router: Router, private panier: PanierService) {
+  constructor(private route: ActivatedRoute, private router: Router) {
     this.route.queryParams.subscribe((params) => {
       if (this.router.getCurrentNavigation()?.extras.state) {
         let state = this.router.getCurrentNavigation()!.extras.state!;
@@ -25,21 +24,5 @@ export class SingleProduitPage implements OnInit {
 
   ngOnInit() {
 
-  }
-
-  goToCart() {
-    this.router.navigate(["/panier"]);
-  }
-
-  addToCart() {
-    this.panier.ajouter(this.produit, this.quantite);
-  }
-
-  less() {
-    this.quantite--;
-  }
-
-  more() {
-    this.quantite++;
   }
 }

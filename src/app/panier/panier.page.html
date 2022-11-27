@@ -3,28 +3,44 @@
 <ion-content>
   <ion-list>
     <ion-item *ngFor="let line of getLines()">
-      <ion-card [ngClass]="{'is-on': line.produit.availability, 'is-off': !line.produit.availability}">
-        <ion-card-header>{{line.produit.comments}}</ion-card-header>
-        <ion-card-content>
-          <p color="primary">
-            Unité: {{ line.produit.unit }}
-          </p>
-          <p color="primary">
-            Prix: {{ line.produit.price }}
-          </p>
-        </ion-card-content>
-        <ion-card-content>
-          <ion-row>
-            <button (click)="lessOnLine(line)">
-              <ion-icon name="remove-outline"></ion-icon>
-            </button>
-            <p padding> {{ line.quantite }} </p>
-            <button (click)="moreOnLine(line)">
-              <ion-icon name="add-outline"></ion-icon>
-            </button>
-          </ion-row>
-        </ion-card-content>
-      </ion-card>
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <ion-row>
+              <ion-label>{{line.produit.name}}</ion-label>
+            </ion-row>
+            <ion-row>
+              <ion-text color="medium">Prix: {{ line.produit.price }} € / {{ line.produit.unit }}</ion-text>
+            </ion-row>
+          </ion-col>
+          <ion-col size="auto">
+            <ion-row style="align-items:center;">
+              <ion-button size="small" fill="outline" (click)="moreOnLine(line)">+</ion-button>
+              <span style="padding-left: 2.5px; padding-right: 2.5px;"> {{ line.quantite }} </span>
+              <ion-button size="small" fill="outline" (click)="lessOnLine(line)">-</ion-button>
+            </ion-row>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
     </ion-item>
   </ion-list>
 </ion-content>
+<ion-footer>
+  <ion-item>
+    <ion-row>
+      <ion-col></ion-col>
+      <ion-col size="auto">
+        <ion-label> {{ getTotal() }} €</ion-label>
+        <ion-button size="small" (click)="checkout()">Acheter</ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-item>
+  <ion-item>
+    <ion-label position="stacked">Adresse de livraison</ion-label>
+    <ion-input placeholder="Adresse"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="stacked">Date de la livraison</ion-label>
+    <ion-datetime displayFormat="DD-MMM-YY HH:mm"></ion-datetime>
+  </ion-item>
+</ion-footer>

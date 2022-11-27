@@ -1,0 +1,13 @@
+<ion-row style="align-items:center; text-align: center;" *ngIf="produit.availability">
+  <ion-button size="small" fill="outline" (click)="more()">+</ion-button>
+  <span style="padding-left: 2.5px; padding-right: 2.5px;"> {{ quantite }} </span>
+  <ion-button size="small" fill="outline" (click)="less()">-</ion-button>
+  <ion-button *ngIf="showAddToCart" size="small" (click)="addToCart()">
+    <ion-icon name="cart"></ion-icon>
+    <span *ngIf="!short" style="padding-left: 5px">Ajouter au panier</span>
+  </ion-button>
+</ion-row>
+<ion-button *ngIf="!produit.availability" size="small" color="medium" (click)="showUnavalaibleToast()">
+  <ion-icon name="cart" ></ion-icon>
+  <span *ngIf="!short" style="padding-left: 5px">Ajouter au panier</span>
+</ion-button>

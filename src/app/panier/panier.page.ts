@@ -15,6 +15,10 @@ export class PanierPage implements OnInit {
   ngOnInit() {
   }
 
+  getTotal() {
+    return this.panier.getTotal();
+  }
+
   getLines() {
     return this.panier.getContent();
   }
