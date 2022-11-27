@@ -2,13 +2,9 @@
 
 <ion-content padding>
   <ion-list>
-    <ion-item>
+    <ion-item *ngFor="let recette of RecetteList">
       <ion-label>
-        <button
-          ion-item
-          *ngFor="let recette of RecetteList"
-          (click)="onLoadRecette(recette)"
-        >
+        <button ion-item (click)="onLoadRecette(recette)">
           {{recette.name}}
         </button>
       </ion-label>
