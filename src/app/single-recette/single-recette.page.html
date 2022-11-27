@@ -12,12 +12,10 @@
 
     <ion-row class="description">
       <p color="primary" *ngFor="let ingredients of recette.Ingredients">
-        {{ ingredients }}<br />
+        {{ ingredients }}
       </p>
-      
-      <p color="primary" *ngFor="let etapes of recette.Etapes">
-        {{ etapes }}<br />
-      </p>
+
+      <p color="primary" *ngFor="let etapes of recette.Etapes">{{ etapes }}</p>
     </ion-row>
   </ion-grid>
 </ion-content>

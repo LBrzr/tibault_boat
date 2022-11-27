@@ -3,7 +3,12 @@
     <ion-back-button default-href="#"></ion-back-button>
   </ion-buttons>
   <ion-title *ngIf="hasTitle()">{{ title }}</ion-title>
-  <ion-title *ngIf="!hasTitle()">Le Bateau de Thibault</ion-title>
+  <ion-title *ngIf="!hasTitle()"
+    ><img
+      class="logo"
+      src="https://dl.dropbox.com/s/8qfqiqq13nxxqwu/logo%20thibault.png"
+  /></ion-title>
+
   <ion-toolbar *ngIf="false">
     <img class="logo" src="../../assets/logo thibault.png" />
   </ion-toolbar>
