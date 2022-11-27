@@ -2,8 +2,17 @@
   <ion-buttons slot="start" *ngIf="showBack">
     <ion-back-button default-href="#"></ion-back-button>
   </ion-buttons>
-  <ion-title *ngIf="hasTitle()">{{ title }}</ion-title>
-  <ion-title *ngIf="!hasTitle()">Le Bateau de Thibault</ion-title>
+  <!-- <ion-title *ngIf="hasTitle()">{{ title }}</ion-title>
+  <ion-title *ngIf="!hasTitle()">Le Bateau de Thibault</ion-title> -->
+  <ion-toolbar>
+    <img class="logo" src="../../assets/logo thibault.png" />
+  </ion-toolbar>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap"
+    rel="stylesheet"
+  />
   <ion-buttons *ngIf="showCart" slot="secondary">
     <ion-button (click)="goToCart()">
       <ion-icon slot="icon-only" name="cart"></ion-icon>
