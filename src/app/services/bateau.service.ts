@@ -10,7 +10,7 @@ export class BateauService {
 
   constructor(private http: HttpClient) {}
 
-  getRecettes() {
+  getBateaux() {
     return this.http.get<Bateau[]>("assets/data/bateaux.json");
   }
 }

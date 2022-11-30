@@ -1,12 +1,16 @@
-const _cat0: Categorie = {id: 0, name: "Categorie 0"},
-_cat1: Categorie = {id: 1, name: "Categorie 1"};
+const _cat0: Categorie = {id: 0, name: "Poissons", icon: "fish"},
+_cat1: Categorie = {id: 1, name: "Coquillages", icon: "sparkles"},
+_cat2: Categorie = {id: 1, name: "Crustacés", icon: "bonfire"};
+
+
 
 export class Categorie {
     id!: number;
     name!: string;
+    icon!: string;
     description?: string;
 
-    static all: Categorie[] = [_cat0, _cat1];
+    static all: Categorie[] = [_cat0, _cat1, _cat2];
 
     static fromId(id: number): Categorie {
         let cat!: Categorie;

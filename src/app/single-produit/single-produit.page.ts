@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Produit } from '../models/produit';
-import { PanierService } from '../services/panier.service';
 
 @Component({
   selector: 'app-single-produit',

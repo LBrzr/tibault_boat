@@ -14,7 +14,7 @@ export class BateauxPage implements OnInit {
   constructor(private router: Router, private bateauService: BateauService) {}
 
   ngOnInit() {
-    this.bateauService.getRecettes().subscribe(
+    this.bateauService.getBateaux().subscribe(
       (res) => {
         this.bateauList = res;
         console.log(this.bateauList);

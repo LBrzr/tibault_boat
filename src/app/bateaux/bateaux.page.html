@@ -1,9 +1,12 @@
 <app-bar title="Bateaux"></app-bar>
 
 <ion-content padding>
-  <ion-item detail="true" *ngFor="let boat of bateauList">
-    <ion-label>
-      <button ion-item (click)="onLoadBateau(boat)">{{boat.name}}</button>
+  <ion-item *ngFor="let boat of bateauList" [detail]="true" (click)="onLoadBateau(boat)">
+
+    <ion-label style="padding-left:5px;">
+      {{boat.name}}
     </ion-label>
+
   </ion-item>
+
 </ion-content>

@@ -42,7 +42,11 @@ export class PanierService {
     console.log(quantite, produit.name, " added !");
   }
 
-  retirer(produit: Produit) {
+  retirerLine(line: LinePanier) {
+    this.retirerProduit(line.produit);
+  }
+
+  retirerProduit(produit: Produit) {
     let index = this._linePanierList.map(line => line.produit).indexOf(produit);
     if (index > -1) {
       this._linePanierList.splice(index, 1);

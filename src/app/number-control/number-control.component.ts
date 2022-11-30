@@ -36,13 +36,13 @@ export class NumberControlComponent implements OnInit {
   }
 
   showAddedToast() {
-    this.showToast(this.produit.name + " ajouté au panier !", 'active');
+    this.showToast(this.produit.name + " ajouté au panier !", "primary");
   }
 
   async showToast(msg: string, color?: string | undefined) {
     const toast = await this.toastController.create({
       message: msg,
-      duration: 1500,
+      duration: 1000,
       position: 'bottom',
       color: color,
     });

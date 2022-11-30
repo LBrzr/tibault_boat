@@ -4,20 +4,25 @@
   <ion-list>
     <ion-item *ngFor="let line of getLines()">
       <ion-grid>
-        <ion-row>
+        <ion-row style="align-items:center;">
+          <ion-col class="ion-activatable ripple-parent circle" size="auto">
+            <ion-icon (click)="removeLine(line)" name="close" color="danger"></ion-icon>
+              <ion-ripple-effect></ion-ripple-effect>
+          </ion-col>
           <ion-col>
             <ion-row>
               <ion-label>{{line.produit.name}}</ion-label>
             </ion-row>
             <ion-row>
               <ion-text color="medium">Prix: {{ line.produit.price }} € / {{ line.produit.unit }}</ion-text>
+              <ion-text *ngIf="line.produit.sale" color="danger" style="padding-left:5px;">- {{line.produit.discount}} €</ion-text>
             </ion-row>
           </ion-col>
           <ion-col size="auto">
             <ion-row style="align-items:center;">
-              <ion-button size="small" fill="outline" (click)="moreOnLine(line)">+</ion-button>
+              <ion-button size="small" fill="outline" (click)="lessOnLine(line)" [disabled]="line.quantite <= 1">-</ion-button>
               <span style="padding-left: 2.5px; padding-right: 2.5px;"> {{ line.quantite }} </span>
-              <ion-button size="small" fill="outline" (click)="lessOnLine(line)">-</ion-button>
+              <ion-button size="small" fill="outline" (click)="moreOnLine(line)">+</ion-button>
             </ion-row>
           </ion-col>
         </ion-row>
@@ -27,20 +32,26 @@
 </ion-content>
 <ion-footer>
   <ion-item>
-    <ion-row>
-      <ion-col></ion-col>
-      <ion-col size="auto">
-        <ion-label> {{ getTotal() }} €</ion-label>
-        <ion-button size="small" (click)="checkout()">Acheter</ion-button>
-      </ion-col>
-    </ion-row>
-  </ion-item>
-  <ion-item>
     <ion-label position="stacked">Adresse de livraison</ion-label>
     <ion-input placeholder="Adresse"></ion-input>
   </ion-item>
   <ion-item>
     <ion-label position="stacked">Date de la livraison</ion-label>
-    <ion-datetime displayFormat="DD-MMM-YY HH:mm"></ion-datetime>
+    <ion-row>
+      <ion-input placeholder="JJ-MMM-YYYY"></ion-input>
+      <ion-input placeholder="HH:mm"></ion-input>
+    </ion-row>
+    <!-- ion-datetime displayFormat="DD-MMM-YY HH:mm"></ion-datetime -->
+  </ion-item>
+  <ion-item>
+    <ion-row style="align-items:center;">
+      <ion-col></ion-col>
+      <ion-col size="auto">
+        <ion-label style="padding-right:5px;"> {{ getTotal() }} €</ion-label>
+      </ion-col>
+      <ion-col size="auto">
+          <ion-button size="small" (click)="checkout()" [disabled]="getLines().length == 0">Acheter</ion-button>
+      </ion-col>
+    </ion-row>
   </ion-item>
 </ion-footer>

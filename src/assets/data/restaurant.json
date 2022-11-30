@@ -2,21 +2,21 @@
   {
     "name": "Bistrot des Gascons ",
     "description": "Qu'il est chaud le soleil \n Quand nous commes en vacances \nYa d'la joie, des hirondelles, C'est le sud de la France\nPapa bricole au garage\n Maman lit dans la chaise longue\n Dans ce joli paysage\n Moi,je me balade en tongs\n\nQue du bonheur !\nQue du bonheur",
-    "image": "./assets/images/restaurants/macdo.png"
+    "image": "./assets/images/restaurants/desGascons@3x.png"
   },
   {
     "name": "Villa 9 Trois",
     "description": "une grande chaîne de restauration rapide américaine qui compte plus de 13 000 lieux de vente dans 100 pays, dont les deux tiers aux États-Unis, et beaucoup au Canada",
-    "image": "./assets/images/restaurants/BK.png"
+    "image": "./assets/images/restaurants/villa9Trois@3x.png"
   },
   {
     "name": "Les fous de l'île",
     "description": "une grande chaîne de restauration rapide américaine qui compte plus de 13 000 lieux de vente dans 100 pays, dont les deux tiers aux États-Unis, et beaucoup au Canada",
-    "image": "./assets/images/restaurants/BK.png"
+    "image": "./assets/images/restaurants/fousDeLIle@3x.png"
   },
   {
     "name": "Bistrot du Sommelier",
     "description": "une grande chaîne de restauration rapide américaine qui compte plus de 13 000 lieux de vente dans 100 pays, dont les deux tiers aux États-Unis, et beaucoup au Canada",
-    "image": "./assets/images/restaurants/BK.png"
+    "image": "./assets/images/restaurants/bistrotLandais@3x.png"
   }
 ]

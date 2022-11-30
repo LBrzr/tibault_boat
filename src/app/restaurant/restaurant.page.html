@@ -1,7 +1,13 @@
 <app-bar title="Restaurant"></app-bar>
 
 <ion-content padding>
-  <ion-item detail="true" *ngFor="let resto of restaurantList">
-    <button ion-item (click)="onLoadResto(resto)">{{resto.name}}</button>
+
+  <ion-item *ngFor="let resto of restaurantList" [detail]="true" (click)="onLoadResto(resto)">
+
+    <ion-label style="padding-left:5px;">
+      {{resto.name}}
+    </ion-label>
+
   </ion-item>
+
 </ion-content>

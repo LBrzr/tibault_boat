@@ -2,22 +2,28 @@
   <app-bar [title]="produit.name"></app-bar>
 </ion-header>
 
-<ion-content padding>
-  <ion-card [ngClass]="{'is-on': produit.availability, 'is-off': !produit.availability}">
-    <ion-label>{{produit.comments}}</ion-label>
-    <ion-card-content>
-      <p color="primary">Unité: {{ produit.unit }}</p>
-      <p color="primary">Prix: {{ produit.price }}</p>
-      <p color="primary">Vendeur: {{ produit.owner }}</p>
-      <p color="primary">Remise: {{ produit.discount }}</p>
-    </ion-card-content>
-    <ion-card-content>
-      <ion-row>
-        <ion-col></ion-col>
-        <ion-col size="auto">
-          <app-number-control [produit]="produit"></app-number-control>
-        </ion-col>
-      </ion-row>
-    </ion-card-content>
-  </ion-card>
+<ion-content padding class="parent">
+  <ion-grid>
+
+    <ion-row>
+      <img [src]="produit.image" />
+    </ion-row>
+
+    <ion-row class="description">
+      <ion-label>{{produit.comments}}</ion-label>
+    </ion-row>
+
+    <p color="primary">Prix: {{ produit.price }} €</p>
+    <p color="primary">Unité: {{ produit.unit }}</p>
+    <p color="primary">Producteur: {{ produit.owner }}</p>
+    <p *ngIf="produit.sale" color="primary">Remise: {{ produit.discount }}</p>
+
+    <ion-row>
+      <ion-col></ion-col>
+      <ion-col size="auto">
+        <app-number-control [produit]="produit"></app-number-control>
+      </ion-col>
+    </ion-row>
+
+  </ion-grid>
 </ion-content>

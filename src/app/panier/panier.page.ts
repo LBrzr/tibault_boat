@@ -34,4 +34,8 @@ export class PanierPage implements OnInit {
   lessOnLine(line: LinePanier) {
     this.panier.update(line, line.quantite - 1);
   }
+
+  removeLine(line: LinePanier) {
+    this.panier.retirerLine(line);
+  }
 }
